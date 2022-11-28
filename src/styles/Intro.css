@@ -1,0 +1,92 @@
+#intro {
+  position: relative;
+  background-color: #a7ffff;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  min-height: 38rem;
+  padding: 20px;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#intro figure {
+  border-radius: 50%;
+  padding-left: 28px;
+  height: 24rem;
+  width: 25.5rem;
+  background-color: #000ab522;
+  z-index: 10;
+}
+
+#intro figure img {
+  border-radius: 50%;
+  width: 25rem;
+  z-index: 1;
+}
+
+#presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#presentation h2 {
+  max-width: 25rem;
+  font-size: 30px;
+  font-weight: 600;
+  color: #351a55;
+}
+
+#presentation p {
+  max-width: 35rem;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+#presentation p b {
+  color: #351a55;
+}
+
+@media screen and (max-width: 1050px) {
+  #intro figure {
+    height: 18rem;
+    width: 19.5rem;
+  }
+  
+  #intro figure img {
+    border-radius: 50%;
+    width: 19rem;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 860px) {
+
+  #intro {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  #intro figure {
+    height: auto;
+    width: auto;
+    padding-left: 0;
+    border: 1px solid #351a55;
+  }
+  
+  #intro figure img {
+    border-radius: 50%;
+    width: 16rem;
+    z-index: 1;
+  }
+
+  #presentation {
+    text-align: center;
+  }
+
+  #presentation h2 {
+    max-width: none;
+  }
+}
