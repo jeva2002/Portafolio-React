@@ -1,0 +1,23 @@
+#contact {
+  position: relative;
+  background-color: #9055a2;
+  border-radius: 1rem;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+  box-shadow: #a7ffff -10px 10px, #c64760 -20px 20px, #daea7a -30px 30px;
+  min-height: 38rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+
+#contact h1 {
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+#contact figure {
+  display: flex;
+  gap: 3rem;
+}

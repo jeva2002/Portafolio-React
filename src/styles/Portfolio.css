@@ -1,0 +1,32 @@
+#portfolio {
+  position: relative;
+  background-color: #daea7a;
+  border-radius: 1rem;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+  box-shadow: #9055a2 -10px 10px, #a7ffff -20px 20px, #c64760 -30px 30px;
+  min-height: 38rem;
+  padding: 1rem;
+}
+
+#portfolio h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+#portfolio .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 297px);
+  grid-auto-rows: auto;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+#portfolio .card {
+  height: 27rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

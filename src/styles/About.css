@@ -1,0 +1,228 @@
+#about {
+  position: relative;
+  background-color: #c64760;
+  border-radius: 1rem;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+  box-shadow: #daea7a -10px 10px, #9055a2 -20px 20px, #a7ffff -30px 30px;
+  min-height: 38rem;
+  padding: 5rem;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#about figure {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 5rem);
+  grid-auto-rows: auto;
+  background-color: #000;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+#about h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#about p {
+  font-size: 1.3rem;
+  background-color: #d44e69;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#about .btn {
+  margin-top: 3rem;
+  width: 200px;
+  height: 50px;
+  font-weight: 500;
+  background-color: #ffff00;
+}
+
+#about .btn:hover {
+  background-color: transparent;
+  color: #ffff00;
+  border-width: 3px;
+}
+
+#HTML {
+  animation: html 5s infinite;
+}
+
+#CSS {
+  animation: css 5s infinite;
+}
+
+#JS {
+  animation: js 5s infinite;
+}
+
+#Mongo {
+  animation: mongo 5s infinite;
+}
+
+#React {
+  color: #62dafc;
+  animation: spin infinite 5s linear;
+}
+
+#Node {
+  animation: node 5s infinite;
+}
+
+#Git {
+  animation: git 5s infinite;
+}
+#GitHub {
+  animation: github 5s infinite;
+}
+#Bootstrap {
+  animation: bootstrap 5s infinite;
+}
+
+@keyframes html {
+  0% {
+    color: #212529;
+  }
+  50% {
+    color: #e54c21;
+  }
+  100% {
+    color: #212529;
+  }
+}
+
+@keyframes css {
+  0% {
+    color: #212529;
+  }
+  50% {
+    color: #0096db;
+  }
+  100% {
+    color: #212529;
+  }
+}
+
+@keyframes js {
+  0% {
+    color: #212529;
+  }
+  50% {
+    color: #ffff00;
+  }
+  100% {
+    color: #212529;
+  }
+}
+
+@keyframes mongo {
+  0% {
+    color: #212529;
+  }
+  50% {
+    color: #4faa41;
+  }
+  100% {
+    color: #212529;
+  }
+}
+
+@keyframes react {
+  0% {
+    color: #212529;
+  }
+  50% {
+    color: #62dafc;
+  }
+  100% {
+    color: #212529;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes node {
+  0% {
+    color: #212529;
+  }
+  50% {
+    color: #67a062;
+  }
+  100% {
+    color: #212529;
+  }
+}
+
+@keyframes git {
+  0% {
+    color: #212529;
+  }
+  50% {
+    color: #f05033;
+  }
+  100% {
+    color: #212529;
+  }
+}
+
+@keyframes github {
+  0% {
+    color: #212529;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #212529;
+  }
+}
+
+@keyframes bootstrap {
+  0% {
+    color: #212529;
+  }
+  50% {
+    color: #7a13f4;
+  }
+  100% {
+    color: #212529;
+  }
+}
+
+@media screen and (max-width: 1160px){
+  #about {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  #about {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 460px){
+  #about figure {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 5rem);
+    padding: 15px;
+  }
+}
+
+

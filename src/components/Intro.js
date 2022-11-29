@@ -2,11 +2,11 @@ import '../styles/Intro.css';
 
 const Intro = () => {
   return (
-    <section id='intro'>
+    <main id='intro'>
       <figure>
         <img src={require('../imgs/Maki.jpg')} alt='Profile' />
       </figure>
-      <div id='presentation'>
+      <section id='presentation'>
         <h2>
           Hi everyone, I'm Esteban Villegas and this is my first portfolio.
         </h2>
@@ -17,8 +17,8 @@ const Intro = () => {
           ready to learn new things. I enjoy to study, watch some serie or
           movie, read some of literature or philosophy and write code.
         </p>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 };
 

@@ -1,9 +1,9 @@
 import '../styles/Footer.css';
 
-const Footer = () => {
+const Footer = ({ colors = '' }) => {
   return (
     <footer>
-      <p>Powered by Esteban Villegas with React and Bootstrap.</p>
+      <p id={colors}>Powered by Esteban Villegas with React and Bootstrap.</p>
     </footer>
   );
 };
