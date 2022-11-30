@@ -1,13 +1,16 @@
 header {
-  position: fixed;
-  top: 2vh;
-  width: 85vw;
+  margin: 0 -100px;
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #111111;
+  z-index: 5;
 }
 
 .nav {
   --bs-nav-link-color: #a7feff;
   --bs-nav-link-hover-color: #ddffff;
-  z-index: 50;
 }
 
 .nav-tabs {
@@ -52,6 +55,7 @@ header {
 .nav {
   align-items: flex-end;
   justify-content: flex-end;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 860px){
@@ -62,6 +66,8 @@ header {
 
 @media screen and (max-width: 600px) {
   header {
+    position: fixed;
+    margin: 0;
     top: 43.5rem;
     left: -0.1rem;
     width: 100%;
@@ -84,9 +90,5 @@ header {
 
   .nav-tabs .nav-link{
     border-radius: 5px;
-  }
-
-  .nav-tabs .nav-link.active {
-    display: none;
   }
 }

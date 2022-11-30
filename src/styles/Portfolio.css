@@ -2,8 +2,7 @@
   position: relative;
   background-color: #daea7a;
   border-radius: 1rem;
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
-  box-shadow: #9055a2 -10px 10px, #a7ffff -20px 20px, #c64760 -30px 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) -5px 5px, #9055a2 -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, #a7ffff -20px 20px, rgba(0, 0, 0, 0.3) -25px 25px, #c64760 -30px 30px;
   min-height: 38rem;
   padding: 1rem;
 }

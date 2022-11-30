@@ -1,7 +1,10 @@
+import { setWindowTitle } from '../functions/common';
 import '../styles/Portfolio.css';
 import CardPortfolio from './Card';
 
 const Portfolio = () => {
+  setWindowTitle('Portfolio');
+
   return (
     <main id='portfolio'>
       <h1>PORTFOLIO</h1>

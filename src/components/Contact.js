@@ -1,7 +1,10 @@
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
+import { setWindowTitle } from '../functions/common';
 import '../styles/Contact.css';
 
 const Contact = () => {
+  setWindowTitle('Contact');
+
   return (
     <main id='contact'>
       <h1>CONTACT</h1>

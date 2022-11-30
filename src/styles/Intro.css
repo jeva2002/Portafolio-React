@@ -2,8 +2,7 @@
   position: relative;
   background-color: #a7ffff;
   border-radius: 1rem;
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
-  box-shadow: #c64760 -10px 10px, #daea7a -20px 20px, #9055a2 -30px 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) -5px 5px, #c64760 -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, #daea7a -20px 20px, rgba(0, 0, 0, 0.3) -25px 25px, #9055a2 -30px 30px;
   min-height: 38rem;
   padding: 20px;
   display: flex;
@@ -18,7 +17,7 @@
   height: 24rem;
   width: 25.5rem;
   background-color: #bbffff;
-  z-index: 10;
+  z-index: 2;
 }
 
 #intro figure img {
@@ -66,7 +65,7 @@
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 960px) {
 
   #intro {
     flex-direction: column;

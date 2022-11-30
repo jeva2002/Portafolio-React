@@ -4,6 +4,7 @@ import { SiMongodb, SiNodedotjs, SiReact, SiBootstrap } from 'react-icons/si';
 import { FaGitAlt, FaGithub } from 'react-icons/fa';
 import Button from 'react-bootstrap/Button';
 import '../styles/About.css';
+import { setWindowTitle } from '../functions/common';
 
 const iconsStyle = {
   height: '5rem',
@@ -11,6 +12,7 @@ const iconsStyle = {
 };
 
 const About = () => {
+  setWindowTitle('About');
   return (
     <main id='about'>
       <section>
@@ -22,8 +24,9 @@ const About = () => {
           I have used node in the server site with express to do a REST API and
           to install many libraries with npm. I'm studying React with some
           libraries to amplify its range, and I'm using Bootstrap in some
-          components to speed up the design. Also, I'm familiar with version
-          control system in Git and GitHub, and with some DB as MongoDB.
+          components to speed up the design. Also, I'm familiar with Version
+          Control Systems in Git and GitHub, and with some databases as MongoDB
+          and MySQL.
         </p>
         <Button variant='warning' id='cv'>
           Curriculum Vitae

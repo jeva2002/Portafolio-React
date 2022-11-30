@@ -1,6 +1,9 @@
+import { setWindowTitle } from '../functions/common';
 import '../styles/Intro.css';
 
 const Intro = () => {
+  setWindowTitle('Intro');
+
   return (
     <main id='intro'>
       <figure>
