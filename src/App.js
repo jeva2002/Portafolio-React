@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import React, { Suspense, lazy, useState, useEffect } from 'react';
+import React, { Suspense, lazy, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import ErrorBoundary from './components/error/ErrorBoundary';
@@ -7,10 +7,10 @@ import NotFound from './components/error/NotFound';
 
 const NavComponent = lazy(() => import('./components/NavComponent'));
 const Footer = lazy(() => import('./components/Footer'));
-const Intro = lazy(() => import('./components/Intro'));
-const About = lazy(() => import('./components/About'));
-const Portfolio = lazy(() => import('./components/Portfolio'));
-const Contact = lazy(() => import('./components/Contact'));
+const Intro = lazy(() => import('./components/views/Intro'));
+const About = lazy(() => import('./components/views/About'));
+const Portfolio = lazy(() => import('./components/views/Portfolio'));
+const Contact = lazy(() => import('./components/views/Contact'));
 
 function App() {
   const [commonColor, setCommonColor] = useState();
@@ -22,7 +22,7 @@ function App() {
     ) {
       setCommonColor(window.location.pathname.replace('/', ''));
     } else {
-      setCommonColor();
+      setCommonColor('');
     }
   };
 
