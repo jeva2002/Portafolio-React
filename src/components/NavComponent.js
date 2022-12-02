@@ -1,29 +1,49 @@
 import Nav from 'react-bootstrap/Nav';
+import { NavLink } from 'react-router-dom';
 import '../styles/Nav.css';
 
-function NavComponent({ colors = '' }) {
+function NavComponent({ colors = '', handlerColor }) {
   return (
     <header>
       <Nav variant='tabs' defaultActiveKey='/home' id={colors}>
         <Nav.Item>
-          <Nav.Link href='/' className='links'>
+          <NavLink
+            className='links nav-link'
+            to='/'
+            onClick={() => handlerColor()}
+          >
             Intro
-          </Nav.Link>
+          </NavLink>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey='link-1' className='links' href='/about'>
+          <NavLink
+            eventKey='link-1'
+            className='links nav-link'
+            to='/about'
+            onClick={() => handlerColor()}
+          >
             About
-          </Nav.Link>
+          </NavLink>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey='link-2' className='links' href='/portfolio'>
+          <NavLink
+            eventKey='link-2'
+            className='links nav-link'
+            to='/portfolio'
+            onClick={() => handlerColor()}
+          >
             Portfolio
-          </Nav.Link>
+          </NavLink>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey='link-3' className='links' href='/contact'>
+          <NavLink
+            eventKey='link-3'
+            className='links nav-link'
+            to='/contact'
+            onClick={() => handlerColor()}
+          >
             Contact
-          </Nav.Link>
+          </NavLink>
         </Nav.Item>
       </Nav>
     </header>
