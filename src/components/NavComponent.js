@@ -2,7 +2,7 @@ import Nav from 'react-bootstrap/Nav';
 import { NavLink } from 'react-router-dom';
 import '../styles/Nav.css';
 
-function NavComponent({ colors = '', handlerColor }) {
+function NavComponent({ colors, handlerColor }) {
   return (
     <header>
       <Nav variant='tabs' defaultActiveKey='/home' id={colors}>
@@ -10,37 +10,34 @@ function NavComponent({ colors = '', handlerColor }) {
           <NavLink
             className='links nav-link'
             to='/'
-            onClick={() => handlerColor()}
+            onClick={() => handlerColor('intro')}
           >
             Intro
           </NavLink>
         </Nav.Item>
         <Nav.Item>
           <NavLink
-            eventKey='link-1'
             className='links nav-link'
             to='/about'
-            onClick={() => handlerColor()}
+            onClick={() => handlerColor('about')}
           >
             About
           </NavLink>
         </Nav.Item>
         <Nav.Item>
           <NavLink
-            eventKey='link-2'
             className='links nav-link'
             to='/portfolio'
-            onClick={() => handlerColor()}
+            onClick={() => handlerColor('portfolio')}
           >
             Portfolio
           </NavLink>
         </Nav.Item>
         <Nav.Item>
           <NavLink
-            eventKey='link-3'
             className='links nav-link'
             to='/contact'
-            onClick={() => handlerColor()}
+            onClick={() => handlerColor('contact')}
           >
             Contact
           </NavLink>

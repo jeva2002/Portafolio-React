@@ -8,17 +8,17 @@ header {
   z-index: 5;
 }
 
-.nav {
-  --bs-nav-link-color: #a7feff;
-  --bs-nav-link-hover-color: #ddffff;
+.nav-tabs {
+  font-weight: 600;
 }
 
-.nav-tabs {
+#intro-nav {
+  --bs-nav-link-color: #a7feff;
+  --bs-nav-link-hover-color: #ddffff;
   --bs-nav-tabs-border-color: #a7feff;
   --bs-nav-tabs-link-hover-border-color: #ddffff #ddffff #ddffff;
   --bs-nav-tabs-link-active-border-color: #a7feff #a7feff #111111;
   --bs-nav-tabs-link-active-color: #a7feff;
-  font-weight: 600;
 }
 
 #about-nav {

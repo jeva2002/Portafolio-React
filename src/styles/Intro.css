@@ -33,6 +33,7 @@
   background-color: #bbffff;
   padding: 2rem;
   border-radius: 1rem;
+  cursor: default;
 }
 
 #presentation h2 {
