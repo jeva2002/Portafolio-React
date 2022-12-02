@@ -9,6 +9,28 @@ body {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  width: 0.6rem;
+  margin-left: 1rem;
+  background-color: #111111;
+}
+
+.intro-body::-webkit-scrollbar-thumb {
+  background-color: #a7ffff;
+}
+
+.about-body::-webkit-scrollbar-thumb {
+  background-color: #c64760;
+}
+
+.portfolio-body::-webkit-scrollbar-thumb {
+  background-color: #daea7a;
+}
+
+.contact-body::-webkit-scrollbar-thumb {
+  background-color: #9055a2;
+}
+
 main {
   position: relative;
   animation: main-card 1s linear;

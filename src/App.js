@@ -13,27 +13,16 @@ const Portfolio = lazy(() => import('./components/views/Portfolio'));
 const Contact = lazy(() => import('./components/views/Contact'));
 
 function App() {
-  const [commonColor, setCommonColor] = useState('intro');
-  // const colorsCommon = (path) => {
-  //   switch (path) {
-  //     case '/about':
-  //       return setCommonColor('about');
-  //     case '/portfolio':
-  //       return setCommonColor('portfolio');
-  //     case '/contact':
-  //       return setCommonColor('contact');
-  //     default:
-  //       return setCommonColor('intro');
-  //   }
-  // };
+  const [theme, setTheme] = useState('intro');
+  document.body.className = theme + '-body';
 
   return (
     <BrowserRouter>
       <ErrorBoundary>
         <Suspense fallback={<h2 id='loading'>Changing card...</h2>}>
           <NavComponent
-            colors={commonColor + '-nav'}
-            handlerColor={setCommonColor}
+            colors={theme + '-nav'}
+            handlerColor={setTheme}
           ></NavComponent>
           <Routes>
             <Route index element={<Intro />} />
@@ -42,7 +31,7 @@ function App() {
             <Route path='/contact' element={<Contact />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
-          <Footer colors={commonColor + '-footer'} />
+          <Footer colors={theme + '-footer'} />
         </Suspense>
       </ErrorBoundary>
     </BrowserRouter>
